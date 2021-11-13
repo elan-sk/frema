@@ -1,0 +1,56 @@
+.c-button {
+    background-color: $white;
+    border: rem(2px) solid $red;
+    border-radius: rem(60px);
+    display: block;
+    min-width: rem(234px);
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease-in;
+    $self: &;
+    @include from(l) {
+        display: inline-block;
+    }
+    &__content {
+        @extend %body-btn;
+        display: block;
+        padding: rem(20px);
+    }
+    &:hover {
+        background-color: $red;
+        border-color: $red;
+        text-decoration: none;
+        #{$self}__content {
+            color: $white;
+        }
+    }
+    &--primary {
+        background-color: $red;
+        #{$self}__content {
+            color: $white;
+        }
+        &:hover {
+            background-color: $white;
+            border-color: $white;
+            text-decoration: none;
+            #{$self}__content {
+                color: $red;
+            }
+        }
+    }
+}
+
+.wpcf7-submit {
+    font-family: $rb;
+    font-weight: bold;
+    font-size: rem(38px);
+    padding: rem(20px) rem(30px);
+    background-color: $white;
+    color: $amarillo;
+    border-radius: 62px;
+    border: solid $white;
+    &:hover {
+        background-color: $amarillo;
+        color: $white;
+    }
+}

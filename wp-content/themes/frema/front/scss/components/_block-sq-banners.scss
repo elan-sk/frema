@@ -1,0 +1,34 @@
+.block-sq-banners {
+  background-color: $brand-white;
+  padding: rem(30px) 0;
+
+  @include from(l){
+    padding: rem(60px) 0;
+  }
+
+  &__header {
+    margin-bottom: rem(20px);
+
+    @include from(l) {
+      margin-bottom: rem(40px);
+    }
+
+    h2 {
+      @extend %h1;
+      color: $grey;
+    }
+  }
+
+  &__image {
+    text-align: center;
+
+    img {
+      display: inline-block;
+      transition: all .32s ease-in;
+
+      &:hover {
+        border-radius: rem(40px);
+      }
+    }
+  }
+}

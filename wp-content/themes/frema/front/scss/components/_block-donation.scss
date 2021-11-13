@@ -1,0 +1,169 @@
+.block-donation {
+    
+    &__caption{
+        text-align: center;
+        margin-bottom: (50px);
+    }   
+    &__mosaic {
+    margin-top: rem(50px);
+        text-align: left;
+        img {
+            max-width: 100%;
+            align-content:stretch;
+        }
+    }
+    
+    &__image {
+        text-align: center;
+        margin-bottom: rem(50px);
+        margin-top: rem(50px);
+        img {
+            max-width: 100%;
+            position: static;
+            align-content: center;
+        }
+    }
+    &__text {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: rem(30px); 
+        margin-bottom: rem(50px);
+        h2 {
+            color: $amarillo;
+            text-align: center;
+            font-family: $rb;
+            font-size: rem(48px) ;
+        }
+        p {
+            @include from(l) {
+                font-size: rem(25px);
+            }
+            font-size: rem(15px);
+            color:$gray-dark;
+        }
+        a {
+            padding: rem(20px) rem(30px);
+            background-color: $amarillo;
+            color: $white;
+            border-radius: 62px;
+            text-decoration: none;
+            &:hover {
+                background-color: $white;
+                color: $amarillo;
+            }
+        }
+    }
+    &__pagination {
+        bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        @include center('horizontal');
+        &__arrows {
+            width: 38%;
+            @include from(l) {
+                width: 12%;
+            }
+        }
+        &__prev,
+        &__next {
+            display: inline-block;
+            background-color: $white;
+            padding: rem(13px);
+        }
+        &__next {
+            margin-left: rem(-5px);
+        }
+        &__prev-icon {
+            height: rem(29px);
+            width: rem(38px);
+            @include iconBg('../images/icons/prev-grey.svg');
+        }
+        &__next-icon {
+            height: rem(29px);
+            width: rem(38px);
+            @include iconBg('../images/icons/next-grey.svg');
+        }
+        &__dots {
+            width: 61%;
+            @include from(l) {
+                width: 87%;
+            }
+            .slick-dots {
+                bottom: 40px;
+                text-align: center;
+                li {
+                    display: inline-block;
+                    button {
+                        background-color: rgba($white, .5);
+                        border: none;
+                        border-radius: 100%;
+                        margin: 5px 5px;
+                        width: rem(30px);
+                        height: rem(30px);
+                        font-size: 0;
+                        ::before {
+                            color: transparent;
+                        }
+                    }
+                    &.slick-active {
+                        button {
+                            background-color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: transparent;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: transparent;
+}
+
+#slider {
+    .container-slider {
+        padding: rem(2px);
+        @include from(l) {
+            padding: rem(60px);
+        }
+        .item {
+            figure {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .titulo {
+                h4 {
+                    background: #4fad3cb3;
+                    text-align: right;
+                    padding: 20px;
+                    margin-top: -80px;
+                    color: $white;
+                    position: absolute;
+                    font-size: 1rem;
+                    @include from(l) {
+                        font-family: $rb;
+                        font-size: rem(50px);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+#videos {
+    background-image: url('../images/bg/fondo-impacta.png');
+    background-color: $fondo1;
+    background-size: cover;
+    padding: rem(250px) rem(40px);
+    @include from(l) {
+        padding: rem(250px) rem(120px) rem(120px) rem(120px);
+    }
+    .container-about {
+        .highlight {
+            h2 {
+                color: $green;
+            }
+        }
+        .container-videos {
+            display: flex;
+            flex-wrap: wrap;
+            .item {
+                padding: rem(40px);
+                width: 100%;
+                height: auto;
+                @include from(l) {
+                    width: 50%;
+                    height: auto;
+                }
+                .caption {
+                    width: 80%;
+                    background-color: #058ac7;
+                    padding: 20px;
+                    border-radius: 50px;
+                    position: relative;
+                    margin-top: -90px;
+                    @include from(l) {
+                        width: 50%;
+                    }
+                    p {
+                        color: $white;
+                    }
+                }
+                figure {
+                    a {
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

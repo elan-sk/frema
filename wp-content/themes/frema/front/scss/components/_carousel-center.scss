@@ -1,0 +1,152 @@
+.carousel-center {
+  background-color: $brand-white;
+  padding: rem(30px) rem(14px);
+  position: relative;
+  $self: &;
+
+  .slick-track {
+    align-items: center;
+    display: flex;
+  }
+
+  .slick-slide {
+    float: none;
+  }
+
+  .slick-current {
+    position: relative;
+
+    @include from(l) {
+      top: rem(-30px);
+      z-index: 2;
+    }
+
+    #{$self}__item {
+      @include from(l) {
+        transform: scale(1.1);
+        margin: 0;
+      }
+    }
+  }
+
+  &__wrapper {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 0;
+
+    @include from(l) {
+      transform: scale(.86);
+      transition: transform .32s ease-in-out;
+
+      img {
+        transition: all .32s ease-in-out;
+      }
+    }
+  }
+
+  &__image {
+    display: block;
+    position: relative;
+  }
+
+  &__caption {
+    background-color: rgba($black, .5);
+    padding: rem(10px) rem(16px);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    h4 {
+      @extend %body-s;
+      color: $white;
+    }
+  }
+
+  &__pagination {
+    &__prev,
+    &__next {
+      @include center('vertical');
+      top: 34%;
+      cursor: pointer;
+
+      @include from(l) {
+        top: 50%;
+      }
+
+      span {
+        background-color: $red;
+        border-radius: 100%;
+        display: block;
+        height: rem(44px);
+        width: rem(44px);
+        position: relative;
+
+        &:after {
+          @include center('both');
+          content: '';
+          display: block;
+          height: rem(20px);
+          width: rem(18px);
+        }
+      }
+    }
+
+    &__prev {
+      left: 0;
+
+      @include from(l) {
+        left: 20%;
+      }
+
+      span {
+        &:after {
+          @include iconBg('../images/icons/prev-white.svg');
+        }
+      }
+    }
+
+    &__next {
+      right: 0;
+
+      @include from(l) {
+        right: 20%;
+      }
+
+      span {
+        &:after {
+          @include iconBg('../images/icons/next-white.svg');
+        }
+      }
+    }
+
+    &__dots {
+
+      .slick-dots {
+        padding: 0;
+        text-align: center;
+
+        li {
+          display: inline-block;
+
+          button {
+            background-color: rgba($red, .5);
+            border: none;
+            border-radius: 100%;
+            margin: 0 rem(5px);
+            width: rem(12px);
+            height: rem(12px);
+            font-size: 0;
+          }
+
+          &.slick-active {
+            button {
+              background-color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+}

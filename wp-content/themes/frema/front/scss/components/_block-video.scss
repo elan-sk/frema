@@ -1,0 +1,11 @@
+.block-video {
+  background-color: $brand-white;
+  padding-top: rem(40px);
+  padding-bottom: rem(40px);
+
+  &__iframe {
+    @include from(l) {
+      min-height: rem(520px);
+    }
+  }
+}

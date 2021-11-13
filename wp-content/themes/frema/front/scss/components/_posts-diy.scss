@@ -1,0 +1,89 @@
+.container-single {
+    .col-md-12 {
+        figure {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .container-single-content {
+        padding: rem(20px) rem(50px);
+        @include from(l) {
+            padding: rem(20px) rem(100px);
+        }
+        h1 {
+            font-size: rem(90px);
+            text-align: center;
+            color: $blue;
+        }
+        .text-left {
+            padding: rem(40px) rem(30px);
+            a {
+                padding: rem(20px) rem(30px);
+                background-color: $yellow;
+                color: $white;
+                border-radius: 62px;
+                text-decoration: none;
+                &:hover {
+                    background-color: $white;
+                    color: $yellow;
+                    border: 1px solid $white;
+                }
+            }
+        }
+    }
+}
+
+.sidebar {
+    padding: rem(20px) rem(50px);
+    @include from(l) {
+        border-left: 4px solid $fondo2;
+        padding: rem(20px) rem(100px);
+    }
+    .widget_recent_entries {
+        .posts-sidebar {
+            .home-news {
+                margin: rem(10px) rem(10px) rem(86px) rem(10px);
+            }
+        }
+        text-align: center;
+        h4 {
+            font-family: $rb;
+            font-size: rem(50px);
+            color: $blue;
+            padding: rem(45px);
+        }
+        .box_news_small {
+            a {
+                @extend %body;
+                color: $blue;
+            }
+        }
+        .box_bg {
+            a {
+                picture {
+                    img {
+                        width: 100%;
+                        height: auto;
+                        padding: rem(20px);
+                    }
+                }
+            }
+        }
+        .link_news {
+            a {
+                padding: rem(20px) rem(30px);
+                background-color: $blue;
+                color: $white;
+                border-radius: 62px;
+                text-decoration: none;
+                &:hover {
+                    background-color: $white;
+                    color: $blue;
+                    border: 1px solid $blue
+                }
+            }
+        }
+    }
+}

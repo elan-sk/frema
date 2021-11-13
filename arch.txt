@@ -1,0 +1,113 @@
+Arquitectura sitio
+
+Comunes:
+
+- Header
+    - menu principal -> main_menu
+- Footer
+    - WYSIWYG -> footer_text
+    - WYSIWYG -> footer_brand
+------------------------------------------------------------------------------------------
+
+- Partials
+
+    - Bloque Banner -> block_banner
+        - Imagen block_banner__image_mobile
+        - Titulo -> block_banner__title
+
+    - Bloque imagen texto -> block_image_text
+      - Imagen -> block_image_text__image
+      - Texto -> block_image_text__text
+
+    - Bloque Banners Cuadrados -> block_sq_banners
+        - Titulo -> block_sq_banners__header
+        - Bloque Item -> block_sq_banners__item -> Repeater
+            - Imagen -> block_sq_banners__image
+            - Vinculo -> block_sq_banners__link
+
+    - Bloque Formulario -> block_form
+      - Imagen block_form__image
+      - Tag block_form__tag
+      - Título block_form__title
+      - Referencia Formulario (Contact form 7) -> block_form__shortcode
+
+-----------------------------------------------------------------------------------
+
+- Partials Product
+    - Bloque de redes
+        - Redes Sociales -> block_social
+            - Facebook -> block_social__facebook
+            - Twitter -> block_social__twitter
+            - Pinterest -> block_social__pinterest
+            - Instagram -> block_social__instagram
+
+-----------------------------------------------------------------------------------
+
+Secciones:
+
+- Home -> template_home
+    - Main Slider -> main_slider
+        - Item Slider -> main_slider__item --> Repeater
+            - Imagen de fondo -> main_slider__image
+            - Imagen de fondo en mobile  -> main_slider__image_mobile
+            -  Vinculo -> main_slider__cta
+
+- Quiénes Somos -> template_about
+    - Common -> main_banner    
+    -   Contenido -> content
+    -   repeater grupo titulo y texto
+    - repeater titulo subtitulo y texto
+    - Common -> block_banner
+        - titulo texto 
+        - icono
+        -cada ttilo texto
+    - Slider 
+
+- Casa Cultura -> template_culture
+    - Common -> main_banner
+    - Contenido -> content
+    - Common -> Bloque Iconos
+    - Common -> Bloque Banners Cuadrados
+
+- Blog
+    - common -> main_banner
+    - Historias destacadas --> Posts Categoría relacionada
+    
+- Donación
+    -   banner principal -> main_banner
+    -   Bloque Donación -> block_donation
+        -   Bloque donación título -> block_donation__title
+        -   Bloque donación texto  -> block_donation__text
+        -   Bloque donación imagen -> block_donation__image
+        -   Bloque donación mosaico -> block_donation_mosaic (Repeater)
+            -   Bloque donación mosaico imagen -> block_donation_mosaic__image
+            -   Bloque donación mosaico texto -> block_donation_mosaic__text
+    -   Banner canales de donación --> block_donation_channels
+            -   Banner canales de donación título --> block_donation_channels__title
+            -   Banner canales de donación logos --> block_donation_channels_thumbs (repeater)
+                -   Banner canales de donación logos imagen -->block_donation_channels_thumbs__image
+                -   Banner canales de donación logos título --> block_donation_channels_thumbs__title
+                -   Banner canales de donación logos enlace --> block_donation_channels_thumbs__link
+    -   bloque donantes --> block_sponsors
+        -   bloque donantes título --> block_sponsors__titulo
+        -   bloque donantes video --> block_sponsors__video
+
+- Contacto
+    -   Banner Principal --> main_banner
+    -   Formulario contacto --> contact_form
+        -   Formulario contacto Texto--> contact_form__text
+        -   Formulario contacto Texto LAteral -> contact_form__text-side -->WYSIWYG
+        
+- Internas
+
+
+-----------------------------------------------------------------------------------
+
+Tipos de contenido (post types):
+
+    - Producto -> product (Woocomerce)
+        - Stack basic (title, thumbnail, excerpt, content)
+
+    - Posts
+        - Stack basic (title, image, excerpt, content)
+        - Commons -> block_form

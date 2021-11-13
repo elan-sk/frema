@@ -1,0 +1,32 @@
+.side-products {
+  &__pagination {
+
+    &__dots {
+
+      .slick-dots {
+        padding: 0;
+        text-align: center;
+
+        li {
+          display: inline-block;
+
+          button {
+            background-color: rgba($red, .5);
+            border: none;
+            border-radius: 100%;
+            margin: 0 rem(5px);
+            width: rem(12px);
+            height: rem(12px);
+            font-size: 0;
+          }
+
+          &.slick-active {
+            button {
+              background-color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+}

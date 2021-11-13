@@ -1,0 +1,46 @@
+.product-list {
+  background-color: $brand-white;
+  padding: rem(20px) 0 rem(40px);
+
+  @include from(l) {
+    padding: rem(40px) 0 rem(80px);
+  }
+
+  &__item {
+    box-shadow: 0 0 rem(10px) $grey-lt;
+    margin-bottom: rem(16px);
+    position: relative;
+  }
+
+  &__image {
+    height: rem(220px);
+    margin: 0;
+    position: relative;
+    width: 100%;
+
+    img {
+      @include coverAbsolute(1);
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    background-color: $white;
+    padding: rem(20px);
+    position: relative;
+
+    @include from(l) {
+      min-height: rem(220px);
+    }
+  }
+
+  &__title {
+    @extend %title-loop;
+  }
+
+  &__text {
+    p {
+      color: $grey;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.link {
+  $self: &;
+
+  &__content {
+    @extend %body-btn;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &--simple {
+    #{$self}__content {
+      @extend %body;
+      color: $grey;
+    }
+  }
+
+  &--icon {
+    #{$self}__content {
+      &::after {
+        @include iconBg('../images/icons/next.svg');
+        content: '';
+        display: inline-block;
+        margin-left: rem(15px);
+        height: rem(22px);
+        width: rem(33px);
+        transition: margin .3s ease-in;
+        vertical-align: middle;
+      }
+
+      &:hover {
+        &::after {
+          margin-left: rem(25px);
+        }
+      }
+    }
+  }
+}

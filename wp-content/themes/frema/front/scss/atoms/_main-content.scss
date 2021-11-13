@@ -1,0 +1,71 @@
+.main-content {
+  &--products,
+  &--contact,
+  &--pages {
+    background-color: $brand-white;
+    padding: rem(22px) 0;
+
+    @include from(l) {
+      padding: rem(45px) 0;
+    }
+  }
+
+  &--terms {
+    margin: rem(30px) 0;
+
+    @include from(l) {
+      margin: rem(50px) 0;
+    }
+  }
+
+  &__tag {
+    @extend %tag;
+  }
+
+  &__hero {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__heading {
+    color: $grey;
+    padding: rem(20px) 0;
+  }
+
+  &__content {
+    padding-bottom: rem(60px);
+  }
+
+  h2 {
+    @extend %h1;
+    color: $grey;
+  }
+
+  p,
+  ul > li,
+  ol > li {
+    color: $grey;
+  }
+
+  &--contact {
+    h2,
+    h3 {
+      text-align: center;
+    }
+
+    h3 {
+      @extend %h2;
+      color: $grey;
+    }
+
+    .wpcf7-form {
+      padding: rem(20px);
+
+      @include from(l) {
+        padding: rem(30px) rem(60px);
+      }
+    }
+  }
+}

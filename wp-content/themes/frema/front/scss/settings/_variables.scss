@@ -1,0 +1,43 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+// Brand Colors
+$grey: #575757;
+$grey-lt: #D8D8D8;
+$red: #e1251b;
+$brand-white: #f7f7f7;
+$tangit: #e3348a;
+$pattex: #ffd147;
+$sista: #00b397;
+$loctite: #EB0000;
+$loctite-blue: #054C93;
+$loctite-blue-2: #0D54D0;
+// Brand Colors teabrazo
+$gray-dark:#193535;
+$gray-lt:#dfdfdf;
+$green: #4fad3c;
+$blue:#058ac7;
+$yellow:#fbc01d;
+$fondo1: #fff8e6;
+$fondo2: #dfdfdf;
+// frema
+$gris-oscuro:#193535;
+$gris:#858585;
+$verde:#009245;
+$amarillo:#F29002;
+$naranja:#f07900;
+$fondoN:#F6B14C;
+$fondoM:#F6CE53;
+$negro: #1c1c1c;
+// Fonts
+$rg: 'FuturaBT-Medium';
+$bd: 'FuturaBT-Heavy';
+$lg: 'FuturaBT-light';
+$mb: 'Morning Brew';
+$hck: 'Hackney';
+$rb: 'Roboto bold';
+$rr: 'Roboto';
+// Media queries
+$breakpoints-min: ( 's': 576px, 'm': 768px, 'l': 992px, 'xl': 1470px, );
+$breakpoints-max: ('xs': map-get($breakpoints-min, 's') - 1px, 's': map-get($breakpoints-min, 'm') - 1px, 'm': map-get($breakpoints-min, 'l') - 1px, 'l': map-get($breakpoints-min, 'xl') - 1px, );
+$container-max-widths: ('s': 540px, 'm': 720px, 'l': 960px, 'xl': 1320px, );

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Flama';
+    src: url('Flama.woff2') format('woff2'),
+        url('Flama.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Flama';
+    src: url('Flama-Bold.woff2') format('woff2'),
+        url('Flama-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

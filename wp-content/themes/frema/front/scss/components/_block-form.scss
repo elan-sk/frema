@@ -1,0 +1,34 @@
+.wpcf7 form input[type=date],
+.wpcf7 form input[type=email],
+.wpcf7 form input[type=number],
+.wpcf7 form input[type=tel],
+.wpcf7 form input[type=text] {
+    display: block;
+    color: $white;
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+    padding: rem(30px);
+    background-color: $amarillo;
+    border: .1rem solid $white;
+    margin-left: rem(50px);
+}
+
+.wpcf7 form textarea {
+    width: 80%;
+    padding: rem(30px);
+    display: block;
+    color: $white;
+    background-color: $amarillo;
+    border-radius: 30px;
+    background-color: $amarillo;
+    border: .1rem solid $white;
+}
+
+.wpcf7 {
+    padding: rem(30px);
+    background-image: url(http://fundacionfrema.com.co/wp-content/uploads/2021/10/planta-der-1.png);
+    background-repeat: no-repeat;
+    background-position: right 50% ;
+    background-color: $amarillo;
+}

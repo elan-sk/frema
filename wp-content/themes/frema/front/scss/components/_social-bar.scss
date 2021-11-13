@@ -1,0 +1,79 @@
+.social-bar {
+  background-color: $sista;
+  display: block;
+  padding: rem(20px) 0;
+  @include bgcover;
+
+  @include from(l) {
+    padding: rem(40px) 0;
+  }
+
+  &__side {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+
+    @include from(l) {
+      flex-flow: row;
+    }
+  }
+
+  &__title {
+    @extend %h2;
+    color: $white;
+    display: block;
+  }
+
+  &__icons {
+    display: flex;
+    padding: 0;
+  }
+
+  &__list {
+    display: block;
+    height: rem(40px);
+    margin: 0 rem(6px);
+    width: rem(40px);
+
+    a {
+      color: $white;
+      display: block;
+      font-size: rem(35px);
+      transition: all .35s ease-in-out;
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+
+  &__anchor {
+    color: $white;
+
+    &:hover {
+      color: $white;
+
+      h3 {
+        opacity: .7;
+      }
+    }
+  }
+
+  &__term-link {
+    @extend %h2;
+    color: $white;
+    transition: all .2s;
+  }
+
+  &--loctite {
+    background-image: url('../images/bg/loctite-redes-sociales.png');
+  }
+
+  &--tangit {
+    background-image: url('../images/bg/tangit-redes-sociales.png');
+  }
+
+  &--pattex {
+    background-image: url('../images/bg/pattex-redes-sociales.png');
+  }
+}

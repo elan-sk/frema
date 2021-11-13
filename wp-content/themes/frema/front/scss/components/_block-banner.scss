@@ -1,0 +1,527 @@
+.block-banner {
+    background-color: $white;
+    padding: 0;
+    $self: &;
+    &__image {
+        position: static;
+        display: block;
+        height: 100%;
+        padding: rem(50px) rem(100px);
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__content {
+        padding: rem(60px) rem(20px);
+        text-align: left;
+        justify-content: right;
+        @include from(l) {
+            //max-width: rem(580px);
+            padding: rem(100px) rem(60px);
+        }
+        h2 {
+            color: $blue;
+        }
+    }
+    &__tag {
+        @extend %tag;
+    }
+    &__title {
+        @extend %h2;
+        color: $blue;
+        @include from(l) {
+            margin: rem(30px) 0 rem(25px);
+        }
+    }
+    &__text {
+        @extend %body;
+        color: $grey;
+        margin-bottom: rem(55px);
+        padding: rem(0px) rem(100px);
+    }
+    &--dark {
+        background-color: $black;
+        #{$self}__tag,
+        #{$self}__title,
+        #{$self}__text {
+            color: $white;
+        }
+    }
+    &--cta {
+        position: relative;
+        padding: 0 rem(14px);
+        &__image {
+            display: block;
+            width: 100%;
+            margin: 0;
+            min-height: rem(460px);
+            position: relative;
+            @include from(l) {
+                min-height: rem(320px);
+            }
+            img {
+                width: 100%;
+                @include coverAbsolute(1);
+                object-fit: cover;
+                object-position: right;
+            }
+        }
+        &__caption {
+            @include center('both');
+            z-index: 1;
+        }
+        &__title {
+            @extend %h1;
+            color: $blue;
+            display: block;
+            margin-bottom: rem(20px);
+        }
+    }
+}
+
+.impact {
+    background-image: url('../images/bg/fondo-impacta.png');
+    padding: rem(250px) rem(20px) rem(120px) rem(20px);
+    background-color: $fondo1;
+    background-size: cover;
+    @include from(l) {
+        padding: rem(200px) rem(120px) rem(120px) rem(120px);
+    }
+    .block-banner {
+        padding: rem(50px);
+        &--ipact {
+            .left {
+                display: block;
+                @include from(l) {
+                    display: flex;
+                }
+                figure {
+                    img {
+                        max-width: 270px;
+                    }
+                }
+                h2 {
+                    @include from(l) {
+                        padding: rem(80px);
+                    }
+                    font-size: rem(60px);
+                    color: $blue;
+                }
+            }
+            .col-lg-7 {
+                display: block;
+                @include from(l) {
+                    display: flex;
+                }
+                figure {
+                    img {
+                        max-width: 261px;
+                        height: auto;
+                    }
+                }
+                .info {
+                    @include from(l) {
+                        padding: 0;
+                        padding: rem(80px);
+                    }
+                    a {
+                        padding: rem(20px) rem(30px);
+                        background-color: $white;
+                        color: $blue;
+                        border-radius: 62px;
+                        text-decoration: none;
+                        &:hover {
+                            background-color: $blue;
+                            color: $white;
+                        }
+                    }
+                    p {
+                        margin-bottom: rem(30px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#docs {
+    text-align: center;
+    .container-about__info {
+        padding: rem(20px) rem(100px);
+        @include from(l) {
+            padding: rem(100px) rem(500px);
+        }
+    }
+    .container-docs {
+        display: flex;
+        flex-wrap: wrap;
+        .item {
+            @include from(l) {
+                width: 33%;
+            }
+            padding: 0 rem(100px) rem(100px) rem(100px);
+            text-align: left;
+            width: 100%;
+            h3 {
+                color: $green;
+            }
+            p {
+                margin-bottom: rem(50px);
+            }
+            a {
+                padding: rem(20px) rem(30px);
+                background-color: $green;
+                color: $white;
+                border-radius: 62px;
+                font-family: $lg;
+                text-decoration: none;
+                &:hover {
+                    background-color: $white;
+                    color: $green;
+                }
+            }
+        }
+    }
+}
+
+#voluntariados {
+    .highlight {
+        text-align: center;
+        width: 100%;
+        padding: rem(20px) rem(100px);
+        @include from(l) {
+            padding: rem(20px) rem(500px);
+        }
+        h1 {
+            color: $blue;
+        }
+    }
+    .container-voluntariados {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 rem(20px);
+        @include from(l) {
+            padding: 0 rem(40px);
+        }
+        .item {
+            width: 100%;
+            @include from(l) {
+                width: 50%;
+                display: flex;
+            }
+            display: block;
+            padding: rem(50px) rem(100px);
+            figure {
+                text-align: center;
+                @include from(l) {
+                    text-align: left;
+                }
+                img {
+                    max-width: rem(250px);
+                    height: auto;
+                }
+            }
+            .caption {
+                text-align: center;
+                @include from(l) {
+                    text-align: left;
+                }
+                padding: rem(30px);
+                b {
+                    color: $blue;
+                    font-family: $bd;
+                    font-size: rem(25px);
+                }
+            }
+        }
+    }
+}
+
+.container-donacion {
+    display: block;
+    padding: rem(20px);
+    @include from(l) {
+        padding: rem(40px);
+        display: flex;
+    }
+    .container-donacion__info {
+        width: 100%;
+        padding: rem(120px);
+        @include from(l) {
+            width: 60%;
+            padding: rem(240px);
+        }
+        p {
+            font-family: 'FuturaBT-Heavy';
+        }
+    }
+    .container-donacion__image {
+        width: 100%;
+        @include from(l) {
+            width: 40%;
+        }
+        figure {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+#medios {
+    background-image: url('../images/bg/fondo-impacta.png');
+    padding: rem(300px) rem(120px) rem(120px) rem(120px);
+    header {
+        text-align: center;
+        h2 {
+            color: $blue;
+        }
+    }
+    .medios {
+        display: flex;
+        flex-wrap: wrap;
+        .item {
+            margin: rem(20px);
+            text-align: center;
+            width: 100%;
+            @include from(l) {
+                width: 31%;
+            }
+            padding: rem(10px);
+            a {
+                padding: rem(20px) rem(30px);
+                background-color: $green;
+                color: $white;
+                border-radius: 62px;
+                text-decoration: none;
+                &:hover {
+                    background-color: $white;
+                    color: $green;
+                    border: 1px solid $white;
+                }
+            }
+            figure {
+                img {
+                    width: 60%;
+                    height: auto;
+                    @include from(l) {
+                        max-width: 350px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.video-social {
+    &__video {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        position: relative;
+        margin: 0 10% -10% 10%;
+        iframe {
+            height: 80%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+}
+
+.team {
+    background-image: url('../images/bg/fondo-informate.png');
+    padding: rem(250px) rem(40px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    @include from(l) {
+        padding: rem(250px) rem(120px) rem(10px) rem(120px);
+    }
+    &__header {
+        @extend %h2;
+        color: $green;
+        text-align: center;
+    }
+    .container-team {
+        .col-lg-4 {
+            .item {
+                text-align: center;
+                background-color: #fffcf4;
+                padding: rem(36px);
+                margin: rem(15px);
+                border-radius: 19%;
+                @include from(l) {
+                    min-height: rem(527px);
+                }
+                figure {
+                    img {
+                        max-width: 230px;
+                        height: auto;
+                        margin-bottom: rem(15px);
+                    }
+                }
+                &__title {
+                    @extend %h2;
+                    color: $blue;
+                }
+                &__text {
+                    @extend %body;
+                    color: $grey;
+                }
+            }
+        }
+    }
+}
+
+.servicios {
+    div {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__imagen {
+        padding-top: rem(100px);
+    }
+    &__titulo {
+        text-align: center;
+        color: $white;
+        margin-top: rem(-110px);
+        h4 {
+            font-family: $rb;
+            font-size: rem(45px);
+        }
+    }
+    &__caption {
+        padding-top: rem(50px);
+        text-align: center;
+        height: rem(450px);
+    }
+    &__enlace {
+        text-align: center;
+        a {
+            padding: rem(20px) rem(30px);
+            background-color: $blue;
+            color: $white;
+            border-radius: 62px;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover {
+                background-color: $white;
+                color: $blue;
+                border: 1px solid $blue;
+            }
+        }
+    }
+}
+
+.historia {
+    background-color: $white;
+    padding: 0;
+    $self: &;
+    &__title {
+        @extend %h2;
+        color: $blue;
+        text-align: center;
+        padding: rem(10px);
+    }
+    &__subtitle {
+        @extend %body;
+        color: $blue;
+        padding-bottom: rem(24px);
+        text-align: center;
+        font-weight: bold;
+    }
+    &__text {
+        @extend %body;
+        color: $grey;
+        margin-bottom: rem(55px);
+        padding: rem(50px);
+    }
+    &__image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        max-width: 80%;
+        position: relative;
+        @include from(l) {
+            min-height: rem(480px);
+        }
+        img {
+            width: 100%;
+            @include coverAbsolute(1);
+            //object-position: right;
+        }
+    }
+}
+
+#lineas {
+    .lineas__item {
+        margin-bottom: rem(16px);
+        position: relative;
+        picture {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    background-color: $blue;
+    .lineas {
+        .lineas__destacado {
+            text-align: center;
+            p {
+                font-family: $bd;
+                font-size: 18px;
+                color: $white;
+                padding: rem(20px);
+            }
+        }
+        &__text {
+            @extend %body;
+            color: $white;
+            margin-top: rem(25px);
+            padding: rem(25px);
+            text-align: center;
+            background-color: $blue;
+            height: rem(150px);
+        }
+    }
+}
+
+#areas {
+    padding: rem(20px);
+    @include from(l) {
+        padding: rem(50px);
+    }
+    .banner-5050 {
+        display: block;
+        @include from(l) {
+            display: flex;
+        }
+        .caption-title {
+            text-align: center;
+            @extend %h2;
+            color: $blue;
+            width: 100%;
+            @include from(l) {
+                width: 60%;
+            }
+        }
+        .caption-areas {
+            width: 100%;
+            @include from(l) {
+                width: 40%;
+            }
+            ul {
+                list-style: none;
+            }
+        }
+    }
+}

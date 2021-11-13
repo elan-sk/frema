@@ -1,0 +1,97 @@
+.news {
+    background-color: #F29002;
+    padding: rem(200px) rem(20px) 0 rem(20px);
+    background-size: cover;
+    @include from(l) {
+        padding: rem(200px) rem(120px) 0 rem(120px);
+    }
+    header {
+        text-align: center;
+        color: $green;
+    }
+    &__item {
+        margin-bottom: rem(25px);
+        text-align: center;
+        picture {
+            img {
+                width: 100%;
+                height: auto;
+                padding: 0 rem(30px);
+            }
+        }
+        .news__caption {
+            margin: 0 auto;
+            position: relative;
+            background-color: $white;
+            padding: rem(40px);
+            max-width: 85%;
+            color: $white;
+            p {
+                margin: rem(30px) 0;
+                color: $white
+            }
+            a {
+                padding: rem(20px) rem(30px);
+                background-color: $naranja;
+                color: $white;
+                border-radius: 62px;
+                text-decoration: none;
+                &:hover {
+                    background-color: $white;
+                    color: $naranja;
+                    border: 1px solid $white;
+                }
+            }
+            h3 {
+                color: $verde;
+            }
+        }
+    }
+}
+
+.proyects {
+    background-image: url('../images/bg/fondo-informate.png');
+    padding: rem(200px) rem(120px) 0 rem(120px);
+    background-size: cover;
+    header {
+        text-align: center;
+        color: $green;
+    }
+    &__item {
+        margin-bottom: rem(25px);
+        text-align: center;
+        picture {
+            img {
+                width: 100%;
+                height: auto;
+                padding: 0 rem(30px);
+            }
+        }
+        .news__caption {
+            margin: 0 auto;
+            margin-top: -95px;
+            position: relative;
+            border-radius: 62px;
+            background-color: $blue;
+            padding: rem(40px);
+            max-width: rem(600px);
+            color: $white;
+            p {
+                margin: rem(30px) 0;
+                color: $white
+            }
+            a {
+                padding: rem(20px) rem(30px);
+                background-color: $white;
+                color: $blue;
+                border-radius: 62px;
+                text-decoration: none;
+                &:hover {
+                    background-color: $blue;
+                    color: $white;
+                    border: 1px solid $white;
+                }
+            }
+        }
+    }
+}

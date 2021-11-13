@@ -1,0 +1,171 @@
+.main-slider {
+    margin-top: 72px;
+    position: relative;
+    &__item {
+        position: relative;
+        .Blanco {
+            h1 {
+                color: $white;
+                font-size: rem(50px);
+                @include from(l) {
+                    font-size: rem(110px);
+                }
+            }
+            p {
+                @include from(l) {
+                    font-size: rem(40px);
+                }
+                font-size: rem(35px);
+                color: $white;
+            }
+        }
+        .Azul {
+            h1 {
+                color: $blue;
+                font-size: rem(50px);
+                @include from(l) {
+                    font-size: rem(110px);
+                }
+            }
+            p {
+                @include from(l) {
+                    font-size: rem(40px);
+                }
+                font-size: rem(35px);
+                color: $blue;
+            }
+        }
+    }
+    &__image {
+        img {
+            width: 10%;
+        }
+    }
+    &__caption {
+        max-width: 52rem;
+        left: 2%;
+        position: absolute;
+        top: 33%;
+        transform: translateY(-50%);
+        max-width: 52rem;
+        left: 2%;
+        @include from(l) {
+            left: 10%;
+            text-align: center;
+            @include center('vertical');
+        }
+    }
+    &__pagination {
+        bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        @include center('horizontal');
+        &__arrows {
+            width: 38%;
+            @include from(l) {
+                width: 12%;
+            }
+        }
+        &__prev,
+        &__next {
+            display: inline-block;
+            background-color: $white;
+            padding: rem(13px);
+        }
+        &__next {
+            margin-left: rem(-5px);
+        }
+        &__prev-icon {
+            height: rem(29px);
+            width: rem(38px);
+            @include iconBg('../images/icons/prev-grey.svg');
+        }
+        &__next-icon {
+            height: rem(29px);
+            width: rem(38px);
+            @include iconBg('../images/icons/next-grey.svg');
+        }
+        &__dots {
+            width: 61%;
+            @include from(l) {
+                width: 87%;
+            }
+            .slick-dots {
+                bottom: 40px;
+                text-align: center;
+                li {
+                    display: inline-block;
+                    button {
+                        background-color: rgba($white, .5);
+                        border: none;
+                        border-radius: 100%;
+                        margin: 5px 5px;
+                        width: rem(30px);
+                        height: rem(30px);
+                        font-size: 0;
+                         ::before {
+                            color: transparent;
+                        }
+                    }
+                    &.slick-active {
+                        button {
+                            background-color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: transparent;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: transparent;
+}
+
+#slider {
+    .container-slider {
+        padding: rem(2px);
+        @include from(l) {
+            padding: rem(60px);
+        }
+        .item {
+            figure {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .titulo {
+                h4 {
+                    background: #4fad3cb3;
+                    text-align: right;
+                    padding: 20px;
+                    margin-top: -80px;
+                    color: $white;
+                    position: absolute;
+                    font-size: 1rem;
+                    @include from(l) {
+                        font-family: $rb;
+                        font-size: rem(50px);
+                    }
+                }
+            }
+        }
+    }
+}

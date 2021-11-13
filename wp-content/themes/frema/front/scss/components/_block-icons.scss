@@ -1,0 +1,27 @@
+.banner-items {
+    text-align: center;
+    .highlight {
+        padding: rem(20px) rem(100px);
+        @include from(l) {
+            padding: rem(20px) rem(500px);
+        }
+    }
+    padding-bottom: rem(25px);
+    .highligh__items {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .highligh__item {
+            padding: rem(10px);
+            width: 100%;
+            text-align: center;
+            @include from(l) {
+                width: 33.3%;
+            }
+            p {
+                color: $blue;
+                padding: 20px;
+            }
+        }
+    }
+}

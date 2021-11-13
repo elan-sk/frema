@@ -1,0 +1,31 @@
+.category-cards {
+  background-color: $brand-white;
+  padding-bottom: rem(64px);
+
+  &__item {
+    background-color: $white;
+    box-shadow: 0 0 rem(10px) $grey-lt;
+    margin-bottom: rem(16px);
+
+    @include from(l) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    margin-bottom: 0;
+  }
+
+  &__content {
+    padding: rem(14px);
+    color: $grey;
+
+    @include from(l) {
+      min-height: rem(182px);
+    }
+
+    h3 {
+      @extend %h2;
+    }
+  }
+}

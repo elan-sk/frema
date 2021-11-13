@@ -1,0 +1,27 @@
+.aliados {
+    background-image: url('../images/bg/fondo-aliados.png');
+    background-size: cover;
+    padding-bottom: rem(40px);
+    header {
+        text-align: center;
+        h2 {
+            color: $blue;
+        }
+    }
+    .aliados-content {
+        display: flex;
+        flex-wrap: wrap;
+        .alidados__item {
+            padding: rem(90px);
+            .news__image {
+                border-radius: 50%;
+                box-shadow: -9px 8px 0 0px $blue;
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
