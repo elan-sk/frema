@@ -835,7 +835,7 @@ footer .container-foot .container3 .icon {
 }
 .page-template-_home-tpl .main-slider,
 .page-template-_home-tpl .main-slider__item {
-    position: relative
+    position: relative;
 }
 .page-template-_home-tpl .main-slider__image img {
     width: 100%
@@ -935,13 +935,19 @@ footer .container-foot .container3 .icon {
     background-image: url(../css/1869c210d580920dde241765516e9974.svg)
 }
 .page-template-_home-tpl .main-slider__pagination__dots {
-    width: 61%
+    width: 100%;
+    display: block;
 }
-@media only screen and (min-width: 992px) {
-    .page-template-_home-tpl .main-slider__pagination__dots {
-        width: 87%
-    }
+.page-template-_home-tpl .main-slider__pagination__dots .slick-dots {
+    display: flex !important;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute; 
+    right: calc(100% - 50px);
+    top: calc(100% - 13em);
 }
+
+
 .page-template-_home-tpl .main-slider__pagination__dots .slick-dots {
     bottom: 40px;
     text-align: center
@@ -950,8 +956,8 @@ footer .container-foot .container3 .icon {
     display: inline-block
 }
 .page-template-_home-tpl .main-slider__pagination__dots .slick-dots li button {
-    background-color: hsla(0, 0%, 100%, .5);
-    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    border:1px solid #fff;
     border-radius: 100%;
     margin: 5px;
     width: 1.875rem;
@@ -1109,7 +1115,7 @@ footer .container-foot .container3 .icon {
     .slick-arrow:before {
         background-color: #009245;
         border-radius: 50%;
-        padding: 5px
+        padding: 3px  8px;
     }
 }
 .main-banner {
@@ -2954,8 +2960,8 @@ footer .container-foot .container3 .icon {
     display: inline-block
 }
 .block-donation__pagination__dots .slick-dots li button {
-    background-color: hsla(0, 0%, 100%, .5);
-    border: none;
+    background-color: rgba(255, 255, 255, 0.075);
+    border: 2px solid #fff;
     border-radius: 100%;
     margin: 5px;
     width: 1.875rem;

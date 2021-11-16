@@ -12,7 +12,7 @@
    $main_slider = get_field('main_slider');
 
   ?>
-  <section class="main-slider">
+  <section class="main-slider" dir="rtl">
     <div class="js-slider">
       <?php
       while(have_rows('slider')): the_row();

@@ -441,7 +441,14 @@ if (sliderInstance) {
         slidesToScroll: 1,
         variableHeight: true,
         arrows: true,
-        dots: true
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+        rtl: true,
+        pauseOnHover: false,
+        pauseOnDotsHover: true
+
     };
 
     var _parent = sliderInstance.parentElement;
