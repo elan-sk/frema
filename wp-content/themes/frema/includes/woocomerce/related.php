@@ -21,5 +21,6 @@
 				echo do_shortcode( '[recent_products per_page="8" columns="3" category="destacado"]' );
 			?>
 
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
