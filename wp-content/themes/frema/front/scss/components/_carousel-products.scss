@@ -2,6 +2,11 @@
    transform: skewY(3deg);
 
   .wrsl-prosingle-style-1 .wrsl-prosingle-button .button {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-weight: normal;
+
     padding: rem(20px) rem(30px);
     background-color: $naranja;
     color: $white;
@@ -31,4 +36,15 @@
     font-size: 2rem;
   }
   
+  .wrsl-carousel-controller-center .wrsl-carousel-to-prev, .wrsl-carousel-controller-center .wrsl-carousel-to-next{
+    background-color:$verde;
+    border-style: none;
+  }
+  .wrsl-carousel-controller-center .wrsl-carousel-to-prev{
+    padding: 14px 12px 14px 10px;
+  }
+
+  .wrsl-carousel-controller-center .wrsl-carousel-to-next {
+    padding: 14px 10px 14px 12px;
+  }
 }
