@@ -1,0 +1,33 @@
+#carousel-products {
+
+  .wrsl-prosingle-style-1 .wrsl-prosingle-button .button {
+    padding: rem(20px) rem(30px);
+    background-color: $naranja;
+    color: $white;
+    border-radius: 62px;
+    text-decoration: none;
+    &:hover {
+        background-color: $white;
+        color: $naranja;
+    }
+  }
+  
+  
+  .wrsl-prosingle-style-1 .wrsl-prosingle-heading {
+    color: $verde;
+    font-family: Roboto bold;
+    font-size: 2.8125rem;
+    font-weight: 500;
+  }
+  
+  .wrsl-prosingle-style-1 .wrsl-prosingle-price {
+    color: #e7e1e1;
+    font-family: Roboto;
+    font-size: 1.5625rem;
+  }
+  
+  a {
+    color: #337ab7;
+    background-color: transparent;
+  }
+}

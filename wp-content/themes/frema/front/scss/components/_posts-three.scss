@@ -1,5 +1,5 @@
 .news {
-    background-color: #F29002;
+    background-color: $amarillo;
     padding: rem(200px) rem(20px) 0 rem(20px);
     background-size: cover;
     @include from(l) {
