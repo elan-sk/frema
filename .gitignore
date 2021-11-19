@@ -26,6 +26,7 @@ node_modules/
 *.htaccess
 .htaccess
 
+
 license.txt
 readme.html
 wp-activate.php
