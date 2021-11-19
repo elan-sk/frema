@@ -5,7 +5,7 @@
 			<header class="site-main__header">
 				<h2>Productos destacados</h2>
 			</header>
-			<div id="carousel-products" style="transform: skewY(3deg)">
+			<div id="carousel-products">
 				<?php
 					echo do_shortcode( '[woorousell id="510"]' );
 				?>
