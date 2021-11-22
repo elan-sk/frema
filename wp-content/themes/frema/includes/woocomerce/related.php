@@ -5,7 +5,7 @@
 			<header class="site-main__header">
 				<h2>Productos destacados</h2>
 			</header>
-			<div id="carousel-products">
+			<div id="carousel-products-destacados">
 				<?php
 					echo do_shortcode( '[woorousell id="510"]' );
 				?>
