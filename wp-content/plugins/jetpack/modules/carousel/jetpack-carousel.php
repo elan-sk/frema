@@ -584,7 +584,7 @@ class Jetpack_Carousel {
 	 * content. To be used by 'the_content' filter.
 	 *
 	 * @see add_data_to_images()
-	 * @see wp_make_content_images_responsive() in wp-includes/media.php
+	 * @see wp_filter_content_tags() in wp-includes/media.php
 	 *
 	 * @param string $content HTML content of the post
 	 * @return string Modified HTML content of the post
