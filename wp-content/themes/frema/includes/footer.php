@@ -10,6 +10,9 @@
               <p>
               Fremacaqueta@gmail.com
               </p>
+              <p>
+              <a href="https://fundacionfrema.com.co/politica-privacidad/" target="_blank"> Política de Privacidad
+              </p>
             </div>
         </div>
         <div class="tel">
