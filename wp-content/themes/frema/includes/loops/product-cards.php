@@ -4,5 +4,9 @@
       NUESTROS PRODUCTOS
     </h2>
   </header>
-   <?php echo do_shortcode('[products columns="4" orderby="date"]');?>
+  <div id="carousel-products">
+				<?php
+					echo do_shortcode( '[woorousell id="518"]' );
+				?>
+			</div>
 </section>
