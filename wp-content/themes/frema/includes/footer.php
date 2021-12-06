@@ -11,7 +11,7 @@
               Fremacaqueta@gmail.com
               </p>
               <p>
-              <a href="https://fundacionfrema.com.co/politica-privacidad/" target="_blank"> Política de Privacidad
+                <a href="https://fundacionfrema.com.co/politica-privacidad/" target="_blank"> Política de privacidad</a>
               </p>
             </div>
         </div>
@@ -44,18 +44,28 @@
         </div>
         <div class="icon text-center">
         <figure>
-          <a taget="_blank" href="https://www.instagram.com/frema_ubuntu/?utm_medium=copy_link">
+          <a target="_blank" href="https://www.instagram.com/frema_ubuntu/?utm_medium=copy_link">
             <img src="<?php bloginfo('template_url')?>/img/icono-instagram.png" alt="">
           </a>
           </figure>
         </div>
         <div class="icon text-center">
         <figure>
-          <a taget="_blank" href="https://walink.co/2a5ae7">
+          <a target="_blank" href="https://walink.co/2a5ae7">
             <img src="<?php bloginfo('template_url')?>/img/icono-wa.png" alt="">
           </a>
           </figure>
+
         </div>
+        <div class="icon text-center">
+        <figure>
+          <a target="_blank" href="https://www.sic.gov.co/">
+            <img src="<?php bloginfo('template_url')?>/img/cabezote_SIC" alt="">
+          </a>
+          </figure>
+          
+        </div>
+        
       </div>
 
     </div>
